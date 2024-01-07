@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayout2</title>
+    <style>
+        body {background: #2f3432;}
+        #wrap {font-size: 40px; width: 1000px; height:1600px;  margin:0 auto; color: #fff; text-align: center; text-transform: uppercase;}
+        #header {width: 1000px; height: 200px; background: #96f1d3; line-height: 200px;}
+        #nav {width: 1000px; height: 200px; background: #67a792; line-height: 200px;}
+        #side_left {float: left; width: 200px; height: 1000px; background: #487566; line-height: 1000px;}
+        #contents {float: left; width: 600px; height: 1000px; background: #264b3e;line-height: 1000px;}
+        #side_right {float: left; width: 200px; height: 1000px; background: #245444;line-height: 1000px;}
+        #footer { float: left; width: 1000px; height: 200px; background: #104734;line-height: 200px;}
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">header</div>
+        <div id = "nav">nav</div>
+        <div id = "side_left">side_left</div>
+        <div id = "contents">contents</div>
+        <div id = "side_right">side_right</div>
+        <div id = "footer">footer</div>
+    </div>
+    
+</body>
+</html>
