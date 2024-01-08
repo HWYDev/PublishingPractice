@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layour4</title>
+    <style>
+        body{background: #d3f2f4;}
+        .wrap {margin:0 auto; width: 1000px; height: 1600px; font-size: 40px; color: #fff; text-align: center; text-transform: uppercase; }
+        .header {width: 1000px; height: 200px; background: #aceff4; line-height: 200px;}
+        .nav {width: 1000px; height: 200px; background: #76d0d6; line-height: 200px;}
+        .side {float: left; width: 300px; height: 1000px; background: #2c5457; line-height: 1000px;}
+        .content1 {float: left; width: 700px; height: 500px; background: #19484b; line-height: 500px;}
+        .content2 {float: left; width: 700px; height: 500px; background: #3e767a; line-height: 500px;}
+        .footer {float: left; width: 1000px; height: 200px; background: #274b4e; line-height: 200px;}
+    </style>
+</head>
+<body>
+    <div class = "wrap">
+        <div class = "header">header</div>
+        <div class = "nav">nav</div>
+        <div class = "side">side</div>
+        <div class = "content1">content1</div>
+        <div class = "content2">content2</div>
+        <div class = "footer">footer</div>
+    </div>
+</body>
+</html>
