@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout5</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap {width: 100%; font-size: 30px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header_out {background: #f4e4e4; height: 200px;line-height: 200px;}
+        #banner_out {background: #d59292; height: 300px;line-height: 300px}
+        #content_out {background: #986767; height: 400px;line-height: 400px}
+        #footer_out {background: #655555; height: 200px;line-height: 200px}
+
+        .header_in {margin:0 auto; width: 1000px; height:inherit; background: #db3b3b; }
+        .banner_in {margin:0 auto; width: 1000px; height:inherit; background: #ae3e3e;}
+        .content_in {margin:0 auto; width: 1000px; height:inherit; background: #a13939;}
+        .footer_in {margin:0 auto; width: 1000px; height:inherit; background: #5f1b1b;}
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id ="header_out">
+            <div class= "header_in">header</div>
+        </div>
+        <div id ="banner_out">
+            <div class = "banner_in">banner</div>
+        </div>
+        <div id ="content_out">
+            <div class = "content_in">content</div>
+        </div>
+        <div id ="footer_out">
+            <div class = "footer_in">footer</div>
+        </div>
+    </div>
+</body>
+</html>
