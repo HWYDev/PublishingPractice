@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout7</title>
+    <style>
+
+        #wrap {font-size: 40px; color: #fff; text-align: center; text-transform: uppercase;}
+        #header {width: 100%; height: 300px; }
+        #banner {width: 100%; height: 600px; background:#6ea4bb; line-height: 600px;}
+        #content {width: 100%; height: 1000px; }
+        #footer {width: 100%; height: 300px; background:#84a0ac; line-height: 300px;}
+
+        #header_top {height:150px; background:#d1ecf8; line-height: 150px;}
+        #header_nav {height:150px; background:#182930;line-height: 150px;}
+        #content1 {height:300px; background:#93d0ea; line-height: 300px;}
+        #content2 {height:700px; background:#748b94; line-height: 700px;}
+        
+        .container{width: 1100px; margin:0 auto; background-color: rgba(0, 0, 0, 0.3); height: inherit;}
+
+
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <div id="header_top">
+                <div class="container">header_top</div>
+            </div>
+            <div id="header_nav">
+                <div class="container">header_nav</div>
+            </div>
+        </div>
+        <div id = "banner">
+            <div class="container">banner</div>
+        </div>
+        <div id = "content">
+            <div id="content1">
+                <div class="container">content1</div>
+            </div>
+            <div id="content2">
+                <div class="container">content2</div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div class="container">footer</div>
+        </div>
+    </div>
+</body>
+</html>
