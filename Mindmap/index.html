@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CSS for icons -->
+    <link rel="stylesheet" href="path_to_font_awesome.css">
+</head>
+<body>
+    <div class="chrome-header">
+        <div class="tab selected-tab">
+            <button class="tab-button close-tab">x</button>
+            <span class="tab-title">Christmas Gift for Nina</span>
+            <button class="tab-button new-tab">+</button>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <!-- Left-aligned items -->
+        <select id="fontStyle" class="toolbar-item">...</select>
+        <select id="fontSize" class="toolbar-item">...</select>
+        <input type="text" id="dateRange" class="toolbar-item" placeholder="01 / 12 / 2023 ~ 24 / 12 / 2023">
+        
+        <!-- Right-aligned items in their own container -->
+        <div class="toolbar-group">
+            <button id="shareButton" class="toolbar-icon" title="Share">Share</button>
+            <button id="saveButton" class="toolbar-icon" title="Save">Save</button>
+        </div>
+    </div>
+    
+    <div class="mind-map">
+        <div class="main-node node">
+            <input type="text" value="Christmas Gift For Nina" readonly>
+        </div>
+        <div class="sub-nodes">
+            <div class="child-node node">
+                <input type="text" value="Plan A: Doll">
+            </div>
+            <div class="child-node node">
+                <input type="text" value="Plan B: Watch">
+            </div>
+            <div class="child-node node">
+                <input type="text" value="Plan C: Bag">
+            </div>
+            <!-- Add Walmart, Target, Gucci as sub-sub-nodes -->
+            <div class="sub-sub-nodes">
+                <div class="child-node node">
+                    <input type="text" value="Walmart">
+                </div>
+                <div class="child-node node">
+                    <input type="text" value="Target">
+                </div>
+                <div class="child-node node">
+                    <input type="text" value="Gucci">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ad-space">
+        Advertisement
+    </div>
+
+    
+    <script>
+    // JavaScript to handle node interactions will go here.
+    </script>
+    
+    </body>
+    </html>
