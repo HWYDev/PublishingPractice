@@ -1,0 +1,130 @@
+/* Other styles remain unchanged */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated styles for Chrome-like header */
+.chrome-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns children (tabs) to the start (left) */
+}
+
+.selected-tab {
+    background-color: rgb(197, 240, 240); /* Chrome tab color */
+    color: black; /* Text color for selected tab */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Font size for the title */
+    border-radius: 3px 3px 0 0; /* Rounded corners at the top */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between elements */
+    height: 50px; /* Adjust height to match Chrome's tab */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add some shadow for depth */
+}
+
+.tab-title {
+    margin: 0 10px; /* Add margin to both sides of the title */
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    padding: 0 8px; /* Add some padding around the button text */
+    font-size: 18px; /* Increase font size for visibility */
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.close-tab {
+    left: 0; /* Align to the left side */
+}
+
+.new-tab {
+    right: 0; /* Align to the right side */
+}
+
+.address-bar, .tab-controls {
+    display: none;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between; /* This separates the left and right groups */
+    align-items: center;
+    padding: 10px;
+
+}
+    
+.toolbar-group {
+    margin-left: auto; /* This pushes the .toolbar-group to the right */
+    }
+    
+/* Style for individual toolbar items */
+.toolbar-item {
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+
+/* Style for the icons */
+.toolbar-icon {
+    font-size: 20px; /* Adjust size as needed */
+    cursor: pointer;
+    }
+    
+.toolbar-icon:hover {
+    background-color: rgba(0,0,0,0.1); /* Example hover effect */
+    }
+    
+
+.mind-map {
+    display: flex; /* Use flexbox to layout the main node and sub-nodes */
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 20px; /* Add space from the top */
+}
+
+.main-node {
+    flex: none; /* Do not grow or shrink */
+    margin-right: 20px; /* Add margin between the main node and sub-nodes */
+}
+
+.sub-nodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-sub-nodes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Space between the plans and stores */
+}
+
+.node {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px; /* Space between nodes */
+    background-color: #fff;
+    width: 200px; /* Set a fixed width for all nodes */
+}
+
+.node input {
+    border: none;
+    background: transparent;
+    text-align: center;
+    width: 100%; /* Make input take full width of the node */
+}
+
+.node input:focus {
+    outline: none;
+    border-bottom: 1px solid blue;
+}
