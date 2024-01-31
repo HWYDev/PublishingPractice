@@ -1,0 +1,111 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.header {
+    background-color: #612828; /* Brown */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.logo-link {
+    display: flex; /* Aligns the logo and the text */
+    align-items: center; /* Centers them vertically */
+    text-decoration: none; /* Removes underline from the link */
+    color: #fff; /* Change the color if needed */
+}
+
+.logo {
+    height: 80px; 
+    margin-right: 0px; /* Adds some space between the logo and the text */
+}
+
+
+.navigation .nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set the color of the navigation links */
+    margin-left: 20px; /* Add space between the navigation links */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.navigation .nav-link:hover {
+    text-decoration: underline; /* Add underline on hover for visual feedback */
+}
+
+
+.ad-area {
+    background-color: #ccffcc; /* Light green or any color you want as a fallback */
+    padding: 0 20px; /* Zero padding on top and bottom, 20px on left and right */
+    text-align: center; /* Center the ad image if it's smaller than the ad area */
+    max-width: none;
+}
+
+.ad-image {
+    width: 700px; /* Increase the width to be three times longer */
+    height: 100px; /* Keep the height automatic to maintain aspect ratio */
+    max-width: none; /* Override any previous max-width settings */
+}
+
+
+
+/* Main content area styles */
+.content-area {
+    display: flex; /* This will align the container left, middle, and right side by side */
+    flex: 1; /* Grow to fill the space, don't shrink, be the size of your content */
+}
+
+/* Container left styles */
+.container-left {
+    background-color: #ccccff; /* Light purple */
+    flex: 1; /* Take up 1 part of the flex space within the content area */
+}
+.container-middle {
+    position: relative; /* Ensures positioning context for absolute children */
+    flex: 2; /* Adjust the flex grow factor if necessary */
+    display: flex; /* Allows the use of flexbox alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height to match its flex container */
+    padding: 20px; /* Padding to ensure content doesn't touch the edges */
+    background: #612828;
+}
+
+.mind-map-content {
+    background-color: #ffffff; /* Set the background to white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 200px; /* Inner spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    max-width: 1000px; /* Maximum width */
+    width: 100%; /* Use full width of the container */
+    height: auto; /* Height is determined by content */
+    /* Remove absolute positioning and transform */
+}
+
+
+
+
+/* Container right styles */
+.container-right {
+    background-color: #ccffff; /* Light blue */
+    flex: 1; /* Take up 1 part of the flex space within the content area */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #ffccff; /* Light pink */
+    padding: 50px; /* Keep padding the same for A group */
+    flex: 0 0 auto; /* Don't grow, don't shrink, be the size of your content */
+    text-align: center;
+}
