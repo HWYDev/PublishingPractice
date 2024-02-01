@@ -93,9 +93,87 @@ html, body {
     /* Remove absolute positioning and transform */
 }
 
+.toolbar {
+    display: flex;
+    justify-content: space-between; /* Space between the elements */
+    align-items: center;
+    width: calc(100% - 40px); /* Adjust width considering padding */
+    background-color: #ffffff; /* Make the background white */
+    padding: 10px 20px; /* Provide some padding inside the toolbar */
+    border-radius: 10px; /* Optional: rounded corners for the toolbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+    position: absolute;
+    top: 20px; /* Adjust as necessary to bring it down from the top */
+    left: 20px; /* Align with the left padding of the content */
+    right: 20px; /* Align with the right padding of the content */
+    z-index: 3; /* Ensure toolbar is above the other content */
+}
 
+.toolbar-group {
+    margin-left: auto; /* This pushes the .toolbar-group to the right */
+    }
+    
+/* Style for individual toolbar items */
+.toolbar-item {
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
 
+/* Style for the icons */
+.toolbar-icon {
+    font-size: 20px; /* Adjust size as needed */
+    cursor: pointer;
+    }
+    
+.toolbar-icon:hover {
+    background-color: rgba(0,0,0,0.1); /* Example hover effect */
+    }
 
+    .mind-map {
+        display: flex; /* Use flexbox to layout the main node and sub-nodes */
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 20px; /* Add space from the top */
+    }
+    
+    .main-node {
+        flex: none; /* Do not grow or shrink */
+        margin-right: 20px; /* Add margin between the main node and sub-nodes */
+    }
+    
+    .sub-nodes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sub-sub-nodes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px; /* Space between the plans and stores */
+    }
+    
+    .node {
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px; /* Space between nodes */
+        background-color: #fff;
+        width: 200px; /* Set a fixed width for all nodes */
+    }
+    
+    .node input {
+        border: none;
+        background: transparent;
+        text-align: center;
+        width: 100%; /* Make input take full width of the node */
+    }
+    
+    .node input:focus {
+        outline: none;
+        border-bottom: 1px solid blue;
+    }
 /* Container right styles */
 .container-right {
     background-color: #ccffff; /* Light blue */
