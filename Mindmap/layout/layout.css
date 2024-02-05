@@ -13,7 +13,7 @@ html, body {
 
 /* Header styles */
 .header {
-    background-color: #612828; /* Brown */
+    background-color: #6c9bee; 
     display: flex; /* Use flexbox to align items */
     justify-content: space-between; /* Space out logo and navigation */
     align-items: center; /* Center items vertically */
@@ -46,7 +46,7 @@ html, body {
 
 
 .ad-area {
-    background-color: #ccffcc; /* Light green or any color you want as a fallback */
+    background-color: #6c9bee; 
     padding: 0 20px; /* Zero padding on top and bottom, 20px on left and right */
     text-align: center; /* Center the ad image if it's smaller than the ad area */
     max-width: none;
@@ -68,7 +68,7 @@ html, body {
 
 /* Container left styles */
 .container-left {
-    background-color: #ccccff; /* Light purple */
+    background-color: #6c9bee;; /* Light purple */
     flex: 1; /* Take up 1 part of the flex space within the content area */
 }
 .container-middle {
@@ -79,7 +79,7 @@ html, body {
     align-items: center; /* Center vertically */
     height: 100%; /* Full height to match its flex container */
     padding: 20px; /* Padding to ensure content doesn't touch the edges */
-    background: #612828;
+    background: #6c9bee;
 }
 
 .mind-map-content {
@@ -90,7 +90,7 @@ html, body {
     max-width: 1000px; /* Maximum width */
     width: 100%; /* Use full width of the container */
     height: auto; /* Height is determined by content */
-    /* Remove absolute positioning and transform */
+   
 }
 
 .toolbar {
@@ -145,13 +145,17 @@ html, body {
     
     .sub-nodes {
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Change to row to align child nodes horizontally */
+        justify-content: flex-start; /* Aligns children to the start and adds space between them */
+        align-items: flex-start; /* Aligns children to the top */
+        flex-wrap: wrap; 
     }
     
     .sub-sub-nodes {
         display: flex;
         flex-direction: column;
-        margin-top: 10px; /* Space between the plans and stores */
+        margin-left: 50px; /* Increase this value to move nodes to the right */
+        align-self: flex-start; 
     }
     
     .node {
@@ -160,6 +164,7 @@ html, body {
         padding: 10px;
         margin-bottom: 10px; /* Space between nodes */
         background-color: #fff;
+        margin-right: 20px;
         width: 200px; /* Set a fixed width for all nodes */
     }
     
@@ -176,14 +181,29 @@ html, body {
     }
 /* Container right styles */
 .container-right {
-    background-color: #ccffff; /* Light blue */
+    background-color: #6c9bee; 
     flex: 1; /* Take up 1 part of the flex space within the content area */
 }
 
 /* Footer styles */
 .footer {
-    background-color: #ffccff; /* Light pink */
-    padding: 50px; /* Keep padding the same for A group */
+    background-color: #6c9bee; /* Light pink */
+    padding: 20px; 
     flex: 0 0 auto; /* Don't grow, don't shrink, be the size of your content */
     text-align: center;
+    font-size: 0.9em; 
+    color: #333; 
+}
+
+.footer p {
+    margin: 10px 0; /* Space out paragraphs */
+}
+
+.footer a {
+    color: #333; /* Set the color of the email link, if needed */
+    text-decoration: none; /* Optional: remove underline from the email link */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Optional: add underline on hover for the email link */
 }
