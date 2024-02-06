@@ -1,0 +1,78 @@
+/* style.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7; /* Replace with the path to your background image or any color you prefer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-creation-container {
+    position: relative; /* Add this to make it the positioning context for the back icon */
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15px;
+}
+
+.account-creation-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Adjust the size of your logo if necessary */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.account-creation-form input[type="text"],
+.account-creation-form input[type="email"],
+.account-creation-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.account-creation-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5c6bc0; /* A nice shade of blue, adjust if needed */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.account-creation-form button:hover {
+    background-color: #3f51b5; /* Darker shade of blue on hover, adjust if needed */
+}
+
+/* Add responsiveness for smaller devices */
+@media (max-width: 768px) {
+    .account-creation-container {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px; /* Adjust if necessary */
+    left: 20px; /* Adjust if necessary */
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+    z-index: 10; /* Ensure it is above other elements */
+}
