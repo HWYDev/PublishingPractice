@@ -188,11 +188,11 @@ html, body {
 /* Footer styles */
 .footer {
     background-color: #6c9bee; /* Light pink */
-    padding: 20px; 
+    padding: 20px; /* Adjust padding as needed */
     flex: 0 0 auto; /* Don't grow, don't shrink, be the size of your content */
     text-align: center;
-    font-size: 0.9em; 
-    color: #333; 
+    font-size: 0.9em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
 }
 
 .footer p {
