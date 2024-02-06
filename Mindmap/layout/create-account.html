@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="create-account.css"> <!-- Make sure to link your CSS file -->
+</head>
+<body>
+
+    <div class="account-creation-container">
+        <div class="account-creation-header">
+            <div class="header-content">
+                <a href="login.html" class="back-icon">&#8592;</a> <!-- This is the Unicode for a left-pointing arrow -->
+                <img src="logo.png" alt="MindMap Logo" class="logo"> <!-- Update the src to the path of your logo -->
+                <h1>Create Account</h1>
+            </div>
+        </div>
+        
+        <form action="signup-process.php" method="POST" class="account-creation-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Create account</button>
+        
+        </form>
+    </div>
+</body>
+</html>
